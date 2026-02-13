@@ -1,0 +1,567 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Archer Exteriors - Reliable Roofing in Denver, Colorado. 5-Star Rated. Call (303) 371-9003 for a free quote.">
+    <meta name="keywords" content="Roofing Denver CO, Home Repair Denver, Archer Exteriors, Roof Repair, Roof Replacement">
+    <meta name="author" content="Archer Exteriors">
+    <title>Archer Exteriors | Denver, CO</title>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Classic Serif & Clean Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- 1. VINTAGE TRADESMAN THEME --- */
+        :root {
+            --paper: #f9f7f2;       /* Warm Cream Background */
+            --white: #ffffff;
+            --ink: #2c3e50;         /* Slate Charcoal */
+            --red: #c0392b;         /* Brick/Toolbox Red */
+            --gold: #d4ac0d;        /* Muted Gold */
+            --border: 1px solid #e0ddd5;
+            --double-border: 4px double #e0ddd5;
+            --shadow: 0 4px 20px rgba(44, 62, 80, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            background-color: var(--paper); 
+            color: var(--ink); 
+            font-family: 'Lato', sans-serif; 
+            line-height: 1.8;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 2.24 5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%239C92AC' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        h1, h2, h3, h4 { font-family: 'Merriweather', serif; color: var(--ink); font-weight: 900; letter-spacing: -0.5px; }
+        a { text-decoration: none; color: inherit; transition: 0.3s ease; }
+        ul { list-style: none; }
+        img { width: 100%; display: block; border-radius: 4px; }
+
+        /* --- 2. UTILITY CLASSES --- */
+        .container { max-width: 1080px; margin: 0 auto; padding: 0 30px; }
+        .section-padding { padding: 90px 0; }
+        .text-center { text-align: center; }
+        .grid { display: grid; gap: 40px; }
+        
+        /* CLASSIC BUTTONS */
+        .btn { 
+            display: inline-block; padding: 14px 30px; border-radius: 4px; 
+            font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem;
+            cursor: pointer; border: none; transition: all 0.3s ease;
+        }
+        
+        .btn-primary { 
+            background-color: var(--red); color: var(--white); 
+            border-bottom: 3px solid #922b21; /* Darker red for depth */
+        }
+        .btn-primary:hover { 
+            background-color: #a93226; 
+            transform: translateY(-1px);
+        }
+        
+        .btn-outline { 
+            border: 2px solid var(--ink); color: var(--ink); background: transparent; 
+        }
+        .btn-outline:hover { 
+            background-color: var(--ink); color: var(--white); 
+        }
+
+        /* ORNAMENTAL HEADERS */
+        .section-header { margin-bottom: 60px; text-align: center; }
+        .section-header h2 { font-size: 2.6rem; position: relative; display: inline-block; padding-bottom: 15px; }
+        .section-header h2::after {
+            content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+            width: 80px; height: 3px; background-color: var(--red);
+        }
+        .section-header h2::before {
+            content: ''; position: absolute; bottom: -6px; left: 50%; transform: translateX(-50%);
+            width: 40px; height: 1px; background-color: var(--red);
+        }
+
+        /* --- 3. NAVIGATION --- */
+        header { 
+            background: var(--white); border-bottom: var(--double-border);
+            position: sticky; top: 0; z-index: 1000; 
+        }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; }
+        
+        .logo { 
+            font-family: 'Merriweather', serif; font-size: 1.4rem; font-weight: 900; 
+            color: var(--ink); display: flex; align-items: center; gap: 12px; 
+        }
+        .logo i { color: var(--red); font-size: 1.2rem; }
+        
+        .nav-menu { display: flex; gap: 35px; }
+        .nav-link { 
+            font-weight: 700; font-size: 0.95rem; color: #555; text-transform: uppercase; letter-spacing: 0.5px; 
+            padding-bottom: 5px; border-bottom: 2px solid transparent;
+        }
+        .nav-link:hover, .nav-link.active { color: var(--red); border-bottom-color: var(--red); }
+        
+        .hamburger { display: none; font-size: 1.5rem; cursor: pointer; color: var(--ink); }
+
+        /* --- 4. PAGE SECTIONS --- */
+        .page-section { display: none; animation: fadeIn 0.5s ease; }
+        .page-section.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        /* --- 5. HERO SECTION (Classic Layout) --- */
+        .hero { 
+            padding: 80px 0; 
+            border-bottom: var(--border);
+            background: linear-gradient(to bottom, #fff, var(--paper));
+        }
+        .hero-container {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+        }
+        
+        .hero h1 { font-size: 3.2rem; margin-bottom: 20px; line-height: 1.2; color: var(--ink); }
+        .hero p { font-size: 1.2rem; margin-bottom: 35px; color: #555; font-family: 'Merriweather', serif; font-style: italic; }
+        
+        .badge { 
+            background: var(--gold); color: #fff; padding: 6px 14px; 
+            border-radius: 2px; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 25px; 
+            font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+        }
+        
+        .hero-img-frame {
+            padding: 10px; border: 1px solid #ccc; background: white;
+            box-shadow: 10px 10px 0px rgba(0,0,0,0.05);
+            transform: rotate(2deg);
+        }
+
+        /* --- 6. SERVICES CARDS (Ticket Style) --- */
+        .services-container { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+        
+        .service-card { 
+            background: var(--white); padding: 35px; 
+            border: 1px solid #e0ddd5;
+            text-align: center; transition: var(--transition); 
+            position: relative;
+        }
+        /* Corners detail */
+        .service-card::after {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--red); opacity: 0; transition: 0.3s;
+        }
+        .service-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+        .service-card:hover::after { opacity: 1; }
+        
+        .icon-box { 
+            width: 70px; height: 70px; margin: 0 auto 25px; 
+            color: var(--ink); font-size: 2rem; 
+            border: 2px solid var(--paper); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            background: var(--paper);
+        }
+        .service-card h3 { margin-bottom: 12px; font-size: 1.3rem; }
+
+        /* --- 7. ABOUT SECTION --- */
+        .about-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center; }
+        .about-img { border: 10px solid var(--white); box-shadow: var(--shadow); }
+        
+        .check-list { border-top: 1px solid #ddd; padding-top: 20px; margin-top: 20px; }
+        .check-list li { margin-bottom: 12px; display: flex; gap: 15px; align-items: center; color: #444; }
+        .check-list i { color: var(--red); font-size: 0.9rem; }
+
+        /* --- 8. REVIEWS (Paper Quote) --- */
+        .testimonial-card { 
+            background: var(--white); max-width: 800px; margin: 0 auto; 
+            padding: 60px; border: var(--double-border);
+            text-align: center; 
+            position: relative;
+        }
+        .testimonial-card::before { 
+            content: '\201C'; font-family: 'Merriweather', serif; font-size: 8rem; 
+            color: #f0f0f0; position: absolute; top: -20px; left: 20px; z-index: 0;
+        }
+        .stars { color: var(--gold); margin-bottom: 20px; position: relative; z-index: 1; }
+        .review-text { font-size: 1.3rem; font-family: 'Merriweather', serif; font-style: italic; color: #333; margin-bottom: 30px; position: relative; z-index: 1; }
+        .reviewer { font-weight: 700; color: var(--red); text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; position: relative; z-index: 1; }
+
+        /* --- 9. CONTACT FORM --- */
+        .contact-wrapper { 
+            display: grid; grid-template-columns: 1fr 1.5fr; 
+            background: var(--white); border: 1px solid #ddd; 
+            box-shadow: var(--shadow); 
+        }
+        .contact-info { background: var(--ink); color: var(--white); padding: 50px; }
+        .contact-info h3 { color: var(--white); border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 15px; margin-bottom: 30px; }
+        
+        .info-item { display: flex; gap: 15px; margin-bottom: 25px; align-items: flex-start; }
+        .info-item i { color: var(--gold); margin-top: 5px; }
+        
+        .contact-form { padding: 50px; }
+        .form-group { margin-bottom: 20px; }
+        .form-label { display: block; margin-bottom: 8px; font-weight: 700; color: var(--ink); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .form-control { 
+            width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 2px; 
+            font-size: 1rem; font-family: 'Merriweather', serif; background: #fafafa;
+        }
+        .form-control:focus { outline: none; border-color: var(--red); background: #fff; }
+
+        /* --- 10. STICKY BUTTONS --- */
+        .sticky-btns { position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column; gap: 15px; z-index: 2000; }
+        .float-btn { width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.6rem; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: 0.3s; border: 2px solid white; }
+        .float-btn:hover { transform: scale(1.1); }
+        .whatsapp-btn { background-color: #25D366; }
+        .phone-btn { background-color: var(--red); }
+
+        /* --- 11. FOOTER --- */
+        footer { background: var(--ink); color: #ccc; padding: 50px 0; border-top: 4px solid var(--red); text-align: center; }
+        footer h4 { color: var(--white); margin-bottom: 10px; letter-spacing: 1px; }
+
+        /* --- 12. RESPONSIVE --- */
+        @media (max-width: 900px) {
+            .hero-container { grid-template-columns: 1fr; text-align: center; }
+            .hero-img-frame { width: 80%; margin: 0 auto; transform: rotate(0); }
+            .nav-menu { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: var(--white); flex-direction: column; padding: 30px; border-bottom: 2px solid var(--red); }
+            .nav-menu.active { display: flex; }
+            .hamburger { display: block; }
+            .about-grid, .contact-wrapper { grid-template-columns: 1fr; }
+            .sticky-btns { bottom: 80px; right: 20px; }
+            
+            .mobile-bar { display: flex; position: fixed; bottom: 0; left: 0; width: 100%; background: var(--ink); z-index: 1999; justify-content: space-around; padding: 12px 0; }
+            .mobile-link { display: flex; flex-direction: column; align-items: center; font-size: 0.75rem; color: #aaa; }
+            .mobile-link i { font-size: 1.2rem; margin-bottom: 4px; }
+            .mobile-link.active { color: var(--white); }
+        }
+        @media (min-width: 901px) { .mobile-bar { display: none; } }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <i class="fas fa-hammer"></i> Archer Exteriors
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-link active" onclick="router('home')">Home</li>
+                <li class="nav-link" onclick="router('about')">Our Story</li>
+                <li class="nav-link" onclick="router('services')">What We Do</li>
+                <li class="nav-link" onclick="router('reviews')">Testimonials</li>
+                <li><button onclick="router('contact')" class="btn btn-primary">Get Quote</button></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. HOME PAGE -->
+    <section id="home" class="page-section active">
+        <div class="hero">
+            <div class="container hero-container">
+                <div>
+                    <div class="badge">
+                        <i class="fas fa-certificate"></i> 5-Star Rated in Denver, Colorado
+                    </div>
+                    <h1>Denver's Premier Roofing Solutions<br>Services Done Right.</h1>
+                    <p>From small repairs to major installations, Archer Exteriors provides reliable, high-quality workmanship for your home.</p>
+                    <div>
+                        <button onclick="router('contact')" class="btn btn-primary" style="margin-right: 15px;">Get a Free Quote</button>
+                        <a href="tel:3033719003" class="btn btn-outline">Call (303) 371-9003</a>
+                    </div>
+                </div>
+                <div class="hero-img-frame">
+                    <!-- Placeholder Image from Unsplash - Replace valid URL as needed -->
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80" alt="Worker at work">
+                </div>
+            </div>
+        </div>
+
+        <div class="section-padding container">
+            <div class="section-header">
+                <h2>Our Core Services</h2>
+            </div>
+            <div class="grid services-container">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-screwdriver-wrench"></i></div>
+                    <h3>Residential Roofing</h3>
+                    <p>[Description of service category 1, e.g., drywall patching, door adjustments, and hardware replacement].</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-tv"></i></div>
+                    <h3>Commercial Roofing</h3>
+                    <p>[Description of service category 2, e.g., TV mounting, shelf installation, picture hanging].</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-paint-roller"></i></div>
+                    <h3>Storm Damage Repair</h3>
+                    <p>[Description of service category 3, e.g., Caulking, grouting, and seasonal home preparation].</p>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 50px;">
+                <button onclick="router('services')" class="btn btn-outline">View All Services</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT PAGE -->
+    <section id="about" class="page-section">
+        <div class="section-padding container">
+            <div class="about-grid">
+                <div class="about-img">
+                    <!-- Placeholder Image from Unsplash - Replace valid URL as needed -->
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80" alt="Trade tools">
+                </div>
+                <div>
+                    <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+                        <h2>About Archer Exteriors</h2>
+                    </div>
+                    <p style="margin-bottom: 20px; font-size: 1.15rem; font-family: 'Merriweather', serif;">
+                        We are a locally owned and operated business serving <strong>Denver, Colorado (80239)</strong> and the surrounding areas.
+                    </p>
+                    <p style="margin-bottom: 20px; color: #666;">
+                        At Archer Exteriors, we believe in honest work at fair prices. We understand that inviting someone into your home requires trust, which is why we treat every project with the utmost respect and care.
+                    </p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-star"></i> Licensed & Professional</li>
+                        <li><i class="fas fa-star"></i> 5-Star Customer Rating</li>
+                        <li><i class="fas fa-star"></i> Transparent Pricing</li>
+                        <li><i class="fas fa-star"></i> Punctual & Clean</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SERVICES PAGE -->
+    <section id="services" class="page-section">
+        <div class="section-padding container">
+            <div class="section-header">
+                <h2>All Services</h2>
+                <p style="margin-top: 15px; color: #666;">Comprehensive home solutions for every need.</p>
+            </div>
+            
+            <div class="grid services-container">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-hammer"></i></div>
+                    <h3>Asphalt Shingle Installation</h3>
+                    <p>Baseboards, trim work, door frames, and minor wood repairs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-faucet"></i></div>
+                    <h3>Metal Roof Systems</h3>
+                    <p>Faucet replacement, toilet repair, leak fixing, and showerhead installation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Flat Roof Maintenance</h3>
+                    <p>Light fixture replacement, ceiling fan installation, and outlet plate updates.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-brush"></i></div>
+                    <h3>Gutter Services</h3>
+                    <p>Wall scuffs, trim painting, and small room refreshes.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-box-open"></i></div>
+                    <h3>Skylight Repair & Installation</h3>
+                    <p>IKEA assembly, desk setup, bed frames, and shelving units.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-th-large"></i></div>
+                    <h3>Emergency Roof Tarping</h3>
+                    <p>Grout cleaning, re-grouting, and cracked tile replacement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. REVIEWS PAGE -->
+    <section id="reviews" class="page-section">
+        <div class="section-padding container">
+            <div class="section-header">
+                <h2>What Clients Say</h2>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">
+                    "Archer Exteriors did an outstanding job replacing our roof after a hail storm. Their team was incredibly professional, handled all the insurance paperwork with ease, and completed the project ahead of schedule. Our new roof looks fantastic! - Great people great work and great time. Everything I wanted and more for a more affordable price."
+                </p>
+                <div class="reviewer">- Sarah J.</div>
+                <small style="color: #999; display: block; margin-top: 5px;">Google Review</small>
+            </div>
+
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); margin-top: 50px;">
+                <div class="service-card" style="text-align: left; padding: 30px;">
+                    <div class="stars" style="font-size: 0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p style="font-size: 0.95rem; margin-bottom: 10px; font-style: italic;">"I had a persistent leak that several other companies couldn't fix. Archer Exteriors came out, quickly identified the problem, and made a lasting repair. Their attention to detail and honest assessment saved us a lot of stress and money. Highly recommend! - Fixed my drywall perfectly. You can't even tell there was a hole there. Highly recommend Archer Exteriors."</p>
+                    <strong>- Mark T.</strong>
+                </div>
+                <div class="service-card" style="text-align: left; padding: 30px;">
+                    <div class="stars" style="font-size: 0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p style="font-size: 0.95rem; margin-bottom: 10px; font-style: italic;">"From the initial consultation to the final cleanup, Archer Exteriors exceeded all our expectations. They installed a new metal roof on our commercial building, and the quality of work is exceptional. A truly reliable and skilled roofing contractor. - Very professional and punctual. Mounted two TVs and assembled a dresser in no time."</p>
+                    <strong>- David R.</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. CONTACT PAGE -->
+    <section id="contact" class="page-section">
+        <div class="section-padding container">
+            <div class="section-header">
+                <h2>Request a Quote</h2>
+                <p style="margin-top: 10px;">Tell us about your project and we'll get back to you asap.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Info Side -->
+                <div class="contact-info">
+                    <h3 style="margin-bottom: 25px; font-size: 1.5rem;">Contact Info</h3>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <strong>Phone</strong><br>
+                            <a href="tel:3033719003" style="color: rgba(255,255,255,0.8);">(303) 371-9003</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location</strong><br>
+                            <span style="color: rgba(255,255,255,0.8);">1234 Montbello Rd, Denver, Colorado 80239</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong><br>
+                            <span style="color: rgba(255,255,255,0.8);">info@archerexteriors.com</span>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div style="margin-top: 30px; height: 200px; background: #1a252f; border: 1px solid #444; display: flex; align-items: center; justify-content: center; color: #94a3b8;">
+                         <!-- REPLACE THE SRC ATTRIBUTE BELOW WITH YOUR OWN GOOGLE MAPS EMBED URL -->
+                        <iframe width="100%" height="100%" frameborder="0" style="border:0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49168.64778559092!2d-104.81298514999999!3d39.63844785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c888981446775%3A0x673026d309224429!2sAurora%2C%20CO%2080015!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Form Side -->
+                <div class="contact-form">
+                    <form id="enquiryForm" onsubmit="submitForm(event)">
+                        <div class="form-group">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" required placeholder="John Doe">
+                        </div>
+                        <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="form-group">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" required placeholder="(303) 371-9003">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Service Type</label>
+                                <select class="form-control" required>
+                                    <option value="">Select...</option>
+                                    <option>Repair</option>
+                                    <option>Installation</option>
+                                    <option>Maintenance</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="5" required placeholder="Describe your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <h4>Archer Exteriors</h4>
+            <p style="margin-bottom: 20px;">Serving Denver, Colorado with pride.</p>
+            <p style="font-size: 0.85rem; color: #999;">&copy; 2024 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- STICKY BUTTONS -->
+    <div class="sticky-btns">
+        <a href="https://wa.me/+13033719003?text=Hi%20Archer Exteriors,%20I%E2%80%99d%20like%20a%20quote." target="_blank" class="float-btn whatsapp-btn" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:3033719003" class="float-btn phone-btn" title="Call Now">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- MOBILE NAV BOTTOM -->
+    <div class="mobile-bar">
+        <div class="mobile-link" onclick="router('home')"><i class="fas fa-home"></i>Home</div>
+        <div class="mobile-link" onclick="router('services')"><i class="fas fa-tools"></i>Services</div>
+        <div class="mobile-link" onclick="router('reviews')"><i class="fas fa-star"></i>Reviews</div>
+        <div class="mobile-link" onclick="router('contact')" style="color: var(--white); font-weight: bold;"><i class="fas fa-paper-plane"></i>Quote</div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Router function to switch sections
+        function router(pageId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.page-section');
+            sections.forEach(sec => sec.classList.remove('active'));
+            
+            // Show target section
+            document.getElementById(pageId).classList.add('active');
+            
+            // Scroll top
+            window.scrollTo(0, 0);
+
+            // Update Nav Active State
+            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+            document.querySelectorAll('.nav-link').forEach(link => {
+                if(link.textContent.toLowerCase().includes(pageId) || 
+                  (pageId === 'home' && link.textContent === 'Home')) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Close mobile menu if open
+            document.getElementById('navMenu').classList.remove('active');
+        }
+
+        // Toggle Mobile Menu
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+
+        // Form Handler
+        function submitForm(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerText;
+            
+            btn.innerText = "Sending...";
+            btn.style.opacity = "0.7";
+            
+            // Simulate server request
+            setTimeout(() => {
+                alert("Success! We have received your request and will call you at (303) 371-9003 shortly.");
+                e.target.reset();
+                btn.innerText = originalText;
+                btn.style.opacity = "1";
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
